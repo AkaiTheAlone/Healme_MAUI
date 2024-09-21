@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicativoMaiu", "AplicativoMaiu\AplicativoMaiu.csproj", "{C267B134-D3A5-4CBC-B0A0-CBBA99AF69EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AplicativoMaiu", "AplicativoMaiu\AplicativoMaiu.csproj", "{C267B134-D3A5-4CBC-B0A0-CBBA99AF69EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
