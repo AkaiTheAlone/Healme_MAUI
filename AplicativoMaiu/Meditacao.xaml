@@ -4,22 +4,39 @@
              x:Class="AplicativoMaiu.Meditacao">
 
     <StackLayout Padding="20" VerticalOptions="Center">
+        <!--<Border Stroke="#C49B33"
+        StrokeThickness="4"
+        StrokeShape="RoundRectangle 40,0,0,40"
+        Background="#2B0B98"
+        Padding="16,8"
+        HorizontalOptions="Center">
+            <Label Text=".NET MAUI"
+           TextColor="White"
+           FontSize="18"
+           FontAttributes="Bold" />
+        </Border>-->
+
         <Label x:Name="lblCronometro" 
                Text="00:00" 
                FontSize="48" 
                HorizontalOptions="Center" />
-
-        <Picker x:Name="pickerTempo" 
+        <Frame BorderColor="SandyBrown" 
+               CornerRadius="30" 
+               Padding="1"
+               HeightRequest="40"
+               WidthRequest="130">
+            <Picker x:Name="pickerTempo" 
                 Title="Selecione o tempo" 
                 SelectedIndexChanged="OnPickerSelectedIndexChanged">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type x:Int32}">
-                    <x:Int32>5</x:Int32>
-                    <x:Int32>15</x:Int32>
-                    <x:Int32>30</x:Int32>
-                </x:Array>
-            </Picker.ItemsSource>
-        </Picker>
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int32}">
+                        <x:Int32>5</x:Int32>
+                        <x:Int32>15</x:Int32>
+                        <x:Int32>30</x:Int32>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </Frame>
 
         <StackLayout Orientation="Horizontal" 
                      HorizontalOptions="Center" 

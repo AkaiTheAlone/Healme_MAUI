@@ -4,17 +4,10 @@
              x:Class="AplicativoMaiu.MainPage"
              Title="Página Inicial">
     <VerticalStackLayout>
-        <Label 
-            Text="Bem Vindo ao HealMe, o melhor aplicativo para manutenção de saúde mental da Play Store!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <!--<Button Padding="15" ">
-            
-            
-            
-            
-            
-        </Button>-->
+        
+        <Frame BackgroundColor="LightCoral" CornerRadius="10" HasShadow="True">
+            <Label Text="Seja bem vindo ao HealMe! O mais novo app de cuidados da saúde mental" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Frame>
 
     </VerticalStackLayout>
     

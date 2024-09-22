@@ -4,7 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AplicativoMaiu"
-    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutBehavior="Disabled"
     Title="Healme">
 
     <FlyoutItem Title="Home" FlyoutDisplayOptions="AsMultipleItems">
@@ -15,20 +15,21 @@
             Route="MainPage"
             Icon="home.png"/>
         <ShellContent
-            Title="Lista de Tarefas"
+            Title="Tarefas"
             ContentTemplate="{DataTemplate local:Tarefas}"
             Route="Tarefas"
-            Icon="tarefas.png"/>
+            Icon="lista.png"/>
         <ShellContent
             Title="Meditação"
             ContentTemplate="{DataTemplate local:Meditacao}"
             Route="Meditacao" 
-            Icon="Meditar.png"/>
+            Icon="meditar.png"/>
+
         <ShellContent
             Title="Sobre"
             ContentTemplate="{DataTemplate local:Sobre}"
             Route="Sobre" 
-            Icon="sobre.png"/>
+            Icon="informacoes.png"/>
         <ShellContent
             Title="Contato"
             ContentTemplate="{DataTemplate local:Contato}"

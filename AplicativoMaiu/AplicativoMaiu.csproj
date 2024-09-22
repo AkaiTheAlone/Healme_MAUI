@@ -62,11 +62,13 @@
 	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\dotnet_bot.png" />
 	  <MauiImage Remove="Resources\Images\iconeprincipal.svg" />
+	  <MauiImage Remove="Resources\Images\meditacao.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\dotnet_bot.png" />
 	  <None Remove="Resources\Images\iconeprincipal.svg" />
+	  <None Remove="Resources\Images\meditacao.png" />
 	</ItemGroup>
 
 	<ItemGroup>
