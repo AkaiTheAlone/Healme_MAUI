@@ -3,31 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplicativoMaiu.Meditacao">
 
-    <StackLayout Padding="20" VerticalOptions="Center">
-        <!--<Border Stroke="#C49B33"
-        StrokeThickness="4"
-        StrokeShape="RoundRectangle 40,0,0,40"
-        Background="#2B0B98"
-        Padding="16,8"
-        HorizontalOptions="Center">
-            <Label Text=".NET MAUI"
-           TextColor="White"
-           FontSize="18"
-           FontAttributes="Bold" />
-        </Border>-->
-
+    <VerticalStackLayout Padding="20" VerticalOptions="Center">
         <Label x:Name="lblCronometro" 
                Text="00:00" 
                FontSize="48" 
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"/>
+        <Label HorizontalOptions="Center">Selecione o Tempo de duração</Label>
+        <Label>
+
+        </Label>
         <Frame BorderColor="SandyBrown" 
-               CornerRadius="30" 
+               CornerRadius="10" 
                Padding="1"
                HeightRequest="40"
-               WidthRequest="130">
+               WidthRequest="85">
+
             <Picker x:Name="pickerTempo" 
-                Title="Selecione o tempo" 
-                SelectedIndexChanged="OnPickerSelectedIndexChanged">
+                    SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:Int32}">
                         <x:Int32>5</x:Int32>
@@ -36,14 +32,18 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-        </Frame>
 
-        <StackLayout Orientation="Horizontal" 
-                     HorizontalOptions="Center" 
-                     Spacing="10">
+        </Frame>
+        <Label>
+
+        </Label>
+        <VerticalStackLayout HorizontalOptions="Center" 
+                             Spacing="10">
+
             <Button Text="Iniciar" Clicked="OnIniciarClicked" />
             <Button Text="Parar" Clicked="OnPararClicked" />
             <Button Text="Reiniciar" Clicked="OnReiniciarClicked" />
-        </StackLayout>
-    </StackLayout>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>

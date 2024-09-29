@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoMaiu.Configuracoes"
+             Title="Configurações">
+
+    <VerticalStackLayout Padding="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Text="Notificações" VerticalOptions="Center" Grid.Row="1"/>
+            <Switch Grid.Column="1" Grid.Row="1"  />
+            <!--Toggled="AtivarNotificacoes"-->
+
+            <Label Text="Atualizações Automáticas" VerticalOptions="Center" Grid.Row="3"/>
+            <Switch Grid.Column="1" Grid.Row="3"  />
+            <!--Toggled=""-->
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

@@ -20,7 +20,7 @@ public partial class Tarefas : ContentPage
         taskListView.ItemsSource = tasks;
     }
 
-    // Método para adicionar nova tarefa
+    // adicionar nova tarefa
     private void OnAddTaskClicked(object sender, EventArgs e)
     {
         string newTask = taskEntry.Text;
@@ -29,7 +29,7 @@ public partial class Tarefas : ContentPage
         {
             var tarefa = new Tarefa { Nome = newTask, Concluida = false };
             tasks.Add(tarefa);
-            Console.WriteLine($"Tarefa adicionada: {tarefa.Nome}"); // Adicione esta linha
+            Console.WriteLine($"Tarefa adicionada: {tarefa.Nome}"); 
             taskEntry.Text = string.Empty;
         }
         else

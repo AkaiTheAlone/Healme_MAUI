@@ -7,7 +7,7 @@ public class TarefaItem
     public ObservableCollection<SubtarefaItem> Subtasks { get; set; }
 
     public TarefaItem()
-    {
+    { //n sei se eu vou meter subtarefa, mta mao
         Subtasks = new ObservableCollection<SubtarefaItem>();
     }
 

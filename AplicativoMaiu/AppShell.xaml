@@ -30,11 +30,16 @@
             ContentTemplate="{DataTemplate local:Sobre}"
             Route="Sobre" 
             Icon="informacoes.png"/>
-        <ShellContent
+        <!--<ShellContent
             Title="Contato"
             ContentTemplate="{DataTemplate local:Contato}"
             Route="Contato" 
-            Icon="contato.png"/>
+            Icon="contato.png"/>-->
+        <ShellContent
+            Title="Configurar"
+            ContentTemplate="{DataTemplate local:Configuracoes}"
+            Route="Configurações" 
+            Icon="configuracao.png"/>
     </FlyoutItem>
 
 </Shell>
