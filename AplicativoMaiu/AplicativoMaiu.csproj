@@ -21,7 +21,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>AplicativoMaiu</ApplicationTitle>
+		<ApplicationTitle>Zen</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.aplicativomaiu</ApplicationId>
