@@ -3,7 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplicativoMaiu.Meditacao">
 
+
+    
+    
     <VerticalStackLayout Padding="20" VerticalOptions="Center">
+        <Button Text="Abrir Playlist no Spotify" 
+        Clicked="OnAbrirPlaylistClicked"
+        BackgroundColor="ForestGreen"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+        
         <Label x:Name="lblCronometro" 
                Text="00:00" 
                FontSize="48" 
@@ -12,8 +21,9 @@
                HorizontalTextAlignment="Center"/>
         <Label HorizontalOptions="Center">Selecione o Tempo de duração</Label>
         <Label>
-
         </Label>
+
+
         <Frame BorderColor="SandyBrown" 
                CornerRadius="10" 
                Padding="1"

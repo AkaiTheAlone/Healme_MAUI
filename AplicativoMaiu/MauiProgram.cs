@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using FFImageLoading.Maui;
 
 namespace AplicativoMaiu
 {
@@ -9,6 +10,7 @@ namespace AplicativoMaiu
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseFFImageLoading() // adicionei o bagui pra usar o gif
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -16,7 +18,7 @@ namespace AplicativoMaiu
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

@@ -13,12 +13,12 @@ public class TarefaItem
 
     public bool AreSubtasksCompleted()
     {
-        return Subtasks.All(subtask => subtask.IsCompleted);
+        return Subtasks.All(subtask => subtask.Completa);
     }
 }
 
 public class SubtarefaItem
 {
     public string Title { get; set; }
-    public bool IsCompleted { get; set; }
+    public bool Completa { get; set; }
 }

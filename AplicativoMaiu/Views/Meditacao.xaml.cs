@@ -7,6 +7,7 @@ namespace AplicativoMaiu
         private System.Timers.Timer _temporizador;
         private TimeSpan _tempoRestante;
         private bool _isRunning;
+        private SpotifyService _spotifyService;
 
         public Meditacao()
         {
@@ -14,6 +15,7 @@ namespace AplicativoMaiu
             _temporizador = new System.Timers.Timer(1000);
             _temporizador.Elapsed += OnTemporizadorElapsed;
             _tempoRestante = TimeSpan.Zero;
+            _spotifyService = new SpotifyService();
         }
 
         private void OnPickerSelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +76,10 @@ namespace AplicativoMaiu
                 });
             }
         }
+
+        private async void OnAbrirPlaylistClicked(object sender, EventArgs e)
+        {
+            await _spotifyService.OpenSpotifyPlaylist("37i9dQZF1DWZYo1v54bwkI?si=d8fe94432cda463d");       
+        }
     }
 }
-
