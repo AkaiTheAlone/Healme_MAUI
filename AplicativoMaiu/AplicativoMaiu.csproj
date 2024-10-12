@@ -41,14 +41,9 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
-		<MauiIcon Include="Resources\Images\iconeprincipal.svg">
-		  <Color>#512BD4</Color>
-		  <ForegroundFile>Resources\AppIcon\appiconfg.svg</ForegroundFile>
-		</MauiIcon>
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" BaseSize="64,64" />
-
+		<MauiSplashScreen Include="Resources\Splash\splash.png" TintColor="#66B3FF" />
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 
@@ -60,15 +55,27 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Views\Informacoes.xaml.cs" />
+	  <Compile Remove="Views\NewContent1.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\dotnet_bot.png" />
 	  <MauiImage Remove="Resources\Images\iconeprincipal.svg" />
 	  <MauiImage Remove="Resources\Images\meditacao.png" />
+	  <MauiImage Remove="Resources\Images\splash-removebg-preview.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Views\Informacoes.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\dotnet_bot.png" />
 	  <None Remove="Resources\Images\iconeprincipal.svg" />
 	  <None Remove="Resources\Images\meditacao.png" />
+	  <None Remove="Resources\Images\splash-removebg-preview.png" />
+	  <None Remove="Resources\Splash\splash.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,9 +86,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Resources\Splash\" />
 	  <Folder Include="Services\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	<MauiSplashScreen Include="Resources\Splash\splashsvg.svg" TintColor="#66B3FF" />
+	</ItemGroup>
+	
 	<ItemGroup>
 	  <None Include="..\.editorconfig" Link=".editorconfig" />
 	</ItemGroup>
@@ -97,6 +109,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Meditacao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Privacidade.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Sobre.xaml">

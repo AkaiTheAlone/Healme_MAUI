@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoMaiu.Views.Privacidade">
+    <ScrollView>
+        <!--<StackLayout HorizontalOptions="Center" 
+                     VerticalOptions="Center"
+                     Padding="20">-->
+            <VerticalStackLayout Padding="30">
+            <Frame CornerRadius="30" 
+                   HasShadow="True"
+                   HeightRequest="107"
+                   WidthRequest="350"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   BackgroundColor="DarkGreen">
+                <Label Text="Healme Group Inc.
+                       Política de Privacidade" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"/>
+            </Frame>
+            <Editor Text="A HealMe Group Inc. (doravante referida como 'HealMe') está comprometida em proteger a privacidade e os dados pessoais de seus usuários. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações que você nos fornece ao utilizar o aplicativo HealMe. Ao utilizar o aplicativo, você concorda com os termos desta política."
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        FontSize="Body" 
+                        BackgroundColor="Transparent"
+                        IsReadOnly="True"/>
+                <Label Text="1. Coleta de Informações" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                <Label Text="Podemos coletar as seguintes informações quando você utiliza o HealMe:"
+                       HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="FillAndExpand"
+                       FontSize="Body"/>
+                <Label Text="Informações pessoais: Nome, e-mail, telefone, data de nascimento, sexo, e outros dados necessários para criar sua conta e fornecer nossos serviços. Dados de saúde: Informações sobre condições de saúde, sintomas, histórico médico, entre outros dados fornecidos por você para que possamos personalizar o atendimento.Informações de uso: Dados de navegação, localização geográfica (se autorizado), endereço IP, e comportamento de uso dentro do aplicativo." 
+                       HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="FillAndExpand"
+                       FontSize="Body"/>
+                <Label Text="2. Uso das Informações" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                <Label Text="As informações coletadas são usadas para: Personalizar sua experiência no aplicativo; Fornecer serviços de saúde e bem-estar conforme descrito no aplicativo; Melhorar nossos serviços, funcionalidades e desempenho; Enviar comunicações, como notificações sobre consultas, lembretes ou atualizações importantes, cumprir obrigações legais ou regulatórias." 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Body"/>
+
+                <Label Text="3. Compartilhamento de Informações" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                <Label Text="Não vendemos, alugamos ou trocamos suas informações pessoais com terceiros. No entanto, podemos compartilhar seus dados com: Prestadores de serviços: Empresas terceirizadas que nos ajudam a operar o aplicativo, processar pagamentos ou fornecer suporte técnico. Autoridades legais: Quando exigido por lei ou para proteger nossos direitos ou os direitos de outros usuários." 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Body"/>
+                <Label Text="4. Armazenamento e Segurança" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                <Label Text="Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações pessoais contra acesso não autorizado, uso indevido ou divulgação. No entanto, reconhecemos que nenhuma transmissão de dados pela internet é 100% segura." 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Body"/>
+                <Label Text="5. Seus Direitos" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                <Label Text="Você tem o direito de: Acessar, corrigir ou excluir suas informações pessoais; Revogar o consentimento para o processamento de seus dados a qualquer momento; Solicitar informações sobre como seus dados estão sendo utilizados. Para exercer esses direitos, entre em contato conosco através do e-mail: privacidade@healme.com." 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Body"/>
+                <Label Text="6. Cookies e Tecnologias de Rastreamento" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                <Label Text="O HealMe utiliza cookies e tecnologias semelhantes para coletar informações sobre o uso do aplicativo e melhorar a sua experiência. Você pode desativar os cookies nas configurações do seu dispositivo, mas isso pode impactar a funcionalidade do aplicativo." 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Body"/>
+                <Label Text="7. Alterações na Política de Privacidade" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                <Label Text="Podemos atualizar esta Política de Privacidade de tempos em tempos. Recomendamos que você revise esta página periodicamente para se manter informado sobre quaisquer alterações. A data da última atualização estará sempre indicada no topo deste documento." 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       FontSize="Body"/>
+        </VerticalStackLayout>
+
+
+        <!--</StackLayout>-->
+    </ScrollView>
+
+</ContentPage>

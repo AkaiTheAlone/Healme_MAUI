@@ -13,12 +13,12 @@ namespace AplicativoMaiu
         {
             InitializeComponent();
             _temporizador = new System.Timers.Timer(1000);
-            _temporizador.Elapsed += OnTemporizadorElapsed;
+            _temporizador.Elapsed += TemporizadorTempo;
             _tempoRestante = TimeSpan.Zero;
             _spotifyService = new SpotifyService();
         }
 
-        private void OnPickerSelectedIndexChanged(object sender, EventArgs e)
+        private void TempoSelecionado(object sender, EventArgs e)
         {
             if (pickerTempo.SelectedIndex != -1)
             {
@@ -28,7 +28,7 @@ namespace AplicativoMaiu
             }
         }
 
-        private void OnIniciarClicked(object sender, EventArgs e)
+        private void IniciarTimer(object sender, EventArgs e)
         {
             if (!_isRunning && _tempoRestante.TotalSeconds > 0)
             {
@@ -37,13 +37,13 @@ namespace AplicativoMaiu
             }
         }
 
-        private void OnPararClicked(object sender, EventArgs e)
+        private void PararTimer(object sender, EventArgs e)
         {
             _isRunning = false;
             _temporizador.Stop();
         }
 
-        private void OnReiniciarClicked(object sender, EventArgs e)
+        private void ReiniciarTimer(object sender, EventArgs e)
         {
             _temporizador.Stop();
             _isRunning = false;
@@ -56,7 +56,7 @@ namespace AplicativoMaiu
             }
         }
 
-        private void OnTemporizadorElapsed(object sender, ElapsedEventArgs e)
+        private void TemporizadorTempo(object sender, ElapsedEventArgs e)
         {
             if (_tempoRestante.TotalSeconds > 0)
             {
@@ -77,9 +77,26 @@ namespace AplicativoMaiu
             }
         }
 
-        private async void OnAbrirPlaylistClicked(object sender, EventArgs e)
+        private async void AbrirPlaylistSpotify(object sender, EventArgs e)
         {
-            await _spotifyService.OpenSpotifyPlaylist("37i9dQZF1DWZYo1v54bwkI?si=d8fe94432cda463d");       
-        }
+
+            try
+            {
+                var isSpotifyInstalled = await Launcher.CanOpenAsync($"android-app://com.spotify.music");
+
+                if (isSpotifyInstalled)
+                {
+                    await Launcher.OpenAsync("spotify:playlist:37i9dQZF1DWZYo1v54bwkI?si=d8fe94432cda463d");
+                }
+                else
+                {
+                    await Launcher.OpenAsync("https://open.spotify.com/playlist/37i9dQZF1DWZYo1v54bwkI?si=d8fe94432cda463d");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException($"Erro ao abrir playlist: {ex.Message}");
+            }
+        }
     }
 }

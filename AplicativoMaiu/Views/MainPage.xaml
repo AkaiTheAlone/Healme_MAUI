@@ -8,20 +8,19 @@
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
-        <!-- Texto com Frame -->
-        <VerticalStackLayout>
-            <Frame BackgroundColor="SeaGreen" 
-                   CornerRadius="10" 
-                   HasShadow="True">
-                <Label Text="Seja bem vindo ao HealMe! O mais novo app de cuidados da saúde mental" 
+        <VerticalStackLayout Padding="15">
+            <Frame CornerRadius="30" 
+                   HasShadow="True"
+                   HeightRequest="100"
+                   WidthRequest="350">
+                <Label Text="Seja bem vindo ao HealMe! O mais novo app de cuidados da saúde mental." 
                        HorizontalOptions="Center" 
                        VerticalOptions="Center" />
             </Frame>
         </VerticalStackLayout>
 
-        <!-- Imagem GIF abaixo do texto -->
         <ffimageloading:CachedImage
-            Source="mainpage.gif"
+            Source="gifprincipal.gif"
             Aspect="AspectFit"
             WidthRequest="300"
             HeightRequest="300" />
