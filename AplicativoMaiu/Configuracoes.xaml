@@ -24,7 +24,7 @@
 
             <Label Text="Atualizações Automáticas" VerticalOptions="Center" Grid.Row="3"/>
             <Switch Grid.Column="1" Grid.Row="3"  />
-            <!--Toggled="Atualizações automáticas"-->
+            <!--Toggled=""-->
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
