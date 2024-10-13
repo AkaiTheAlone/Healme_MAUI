@@ -1,17 +1,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AplicativoMaiu.Tarefas">
+             x:Class="AplicativoMaiu.Tarefas"
+             x:Name="taskspage">
 
     <VerticalStackLayout Padding="20">
         <Entry x:Name="taskEntry" Placeholder="Digite sua tarefa" />
-        <Button Text="Adicionar Tarefa" Clicked="OnAddTaskClicked" />
+        <Button Text="Adicionar Tarefa" Clicked="AdicionarNovaTarefa" />
         <ListView x:Name="taskListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout Padding="5">
                             <CheckBox IsChecked="{Binding Concluida}" />
                             <Label Text="{Binding Nome}" VerticalOptions="Center" />
+                            <ImageButton Source="Resources/Images/lixeira.png"
+                                         Command="{Binding Source={x:Reference taskspage}, 
+                                                           Path=RemoverTarefaCommand}"
+                                         CommandParameter="{Binding .}"
+                                         BackgroundColor="Transparent"
+                                         WidthRequest="50"
+                                         HorizontalOptions="End"/>
                         </HorizontalStackLayout>
                     </ViewCell>
                 </DataTemplate>

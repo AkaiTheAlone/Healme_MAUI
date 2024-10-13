@@ -17,12 +17,12 @@
                 <Label Text="Healme Group Inc.
                        Política de Privacidade" 
                        HorizontalOptions="Center" 
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
                        FontSize="Title"/>
             </Frame>
             <Editor Text="A HealMe Group Inc. (doravante referida como 'HealMe') está comprometida em proteger a privacidade e os dados pessoais de seus usuários. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações que você nos fornece ao utilizar o aplicativo HealMe. Ao utilizar o aplicativo, você concorda com os termos desta política."
-                        HorizontalOptions="FillAndExpand" 
-                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Start"   
+                        VerticalOptions="Center"
                         FontSize="Body" 
                         BackgroundColor="Transparent"
                         IsReadOnly="True"/>
@@ -36,8 +36,8 @@
                        VerticalOptions="FillAndExpand"
                        FontSize="Body"/>
                 <Label Text="Informações pessoais: Nome, e-mail, telefone, data de nascimento, sexo, e outros dados necessários para criar sua conta e fornecer nossos serviços. Dados de saúde: Informações sobre condições de saúde, sintomas, histórico médico, entre outros dados fornecidos por você para que possamos personalizar o atendimento.Informações de uso: Dados de navegação, localização geográfica (se autorizado), endereço IP, e comportamento de uso dentro do aplicativo." 
-                       HorizontalOptions="FillAndExpand" 
-                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Center"
                        FontSize="Body"/>
                 <Label Text="2. Uso das Informações" 
                        HorizontalOptions="Center" 
