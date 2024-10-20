@@ -18,11 +18,16 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Label Text="Notificações" VerticalOptions="Center" Grid.Row="1"/>
-            <Switch Grid.Column="1" Grid.Row="1"  />
+            <Label Text="Notificações" 
+                   VerticalOptions="Center" 
+                   Grid.Row="1"/>
+            <Switch Grid.Column="1"
+                    Grid.Row="1"  />
             <!--Toggled="AtivarNotificacoes"-->
 
-            <Label Text="Atualizações Automáticas" VerticalOptions="Center" Grid.Row="3"/>
+            <Label Text="Atualizações Automáticas" 
+                   VerticalOptions="Center" 
+                   Grid.Row="3"/>
             <Switch Grid.Column="1" Grid.Row="3"  />
             <!--Toggled=""-->
         </Grid>

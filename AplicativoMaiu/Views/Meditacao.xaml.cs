@@ -1,9 +1,11 @@
 using System.Timers;
+using System.Windows.Input;
 
 namespace AplicativoMaiu
 {
     public partial class Meditacao : ContentPage
     {
+        public ICommand AbrirSpotifyCommand => new Command<Tarefa>((obj) => AbrirPlaylistSpotify(null, null));
         private System.Timers.Timer _temporizador;
         private TimeSpan _tempoRestante;
         private bool _isRunning;
@@ -82,9 +84,9 @@ namespace AplicativoMaiu
 
             try
             {
-                var isSpotifyInstalled = await Launcher.CanOpenAsync($"android-app://com.spotify.music");
+                var SpotifyInstalado = await Launcher.CanOpenAsync($"android-app://com.spotify.music");
 
-                if (isSpotifyInstalled)
+                if (SpotifyInstalado)
                 {
                     await Launcher.OpenAsync("spotify:playlist:37i9dQZF1DWZYo1v54bwkI?si=d8fe94432cda463d");
                 }

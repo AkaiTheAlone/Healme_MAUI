@@ -64,6 +64,7 @@
 	  <MauiImage Remove="Resources\Images\iconeprincipal.svg" />
 	  <MauiImage Remove="Resources\Images\meditacao.png" />
 	  <MauiImage Remove="Resources\Images\splash-removebg-preview.png" />
+	  <MauiImage Remove="Resources\Images\spotifysvg.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -75,6 +76,7 @@
 	  <None Remove="Resources\Images\iconeprincipal.svg" />
 	  <None Remove="Resources\Images\meditacao.png" />
 	  <None Remove="Resources\Images\splash-removebg-preview.png" />
+	  <None Remove="Resources\Images\spotifysvg.svg" />
 	  <None Remove="Resources\Splash\splash.svg" />
 	</ItemGroup>
 
@@ -83,6 +85,7 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="Plugin.LocalNotification" Version="11.1.4" />
 	</ItemGroup>
 
 	<ItemGroup>

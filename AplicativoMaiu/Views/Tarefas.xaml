@@ -12,7 +12,8 @@
                     <ViewCell>
                         <HorizontalStackLayout Padding="5">
                             <CheckBox IsChecked="{Binding Concluida}" />
-                            <Label Text="{Binding Nome}" VerticalOptions="Center" />
+                            <Label Text="{Binding Nome}" 
+                                   VerticalOptions="Center"/>
                             <ImageButton Source="Resources/Images/lixeira.png"
                                          Command="{Binding Source={x:Reference taskspage}, 
                                                            Path=RemoverTarefaCommand}"

@@ -8,16 +8,16 @@
 
     
     <!--cores modo claro-->
-    <Color x:Key="Primary">#008000</Color>
+    <Color x:Key="Primary">#1ed760</Color>
     <Color x:Key="Secondary">#93bf85</Color>
     <Color x:Key="PrimarText">#000000</Color>
     <!--cores modo escuro-->
-    <Color x:Key="PrimaryDark">#90ee90</Color>
+    <Color x:Key="PrimaryDark">#1ed760</Color>
     <Color x:Key="SecondaryDark">#ccd4b1</Color>
     <Color x:Key="PrimaryDarkText">#000000</Color>
     <Color x:Key="SecondaryDarkText">#ffffff</Color>
 
-
+        <!--diversas-->
     <Color x:Key="Tertiary">#dbead5</Color>
 
     <Color x:Key="White">White</Color>

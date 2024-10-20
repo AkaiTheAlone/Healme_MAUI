@@ -46,5 +46,12 @@ namespace AplicativoMaiu
                 DisplayAlert("Erro", "A tarefa não pode estar vazia", "OK");
             }
         }
+        void RiscarCheckbox(object sender, CheckedChangedEventArgs e)
+        {
+            if (sender is CheckBox checkBox && checkBox.BindingContext is Label label)
+            {
+                VisualStateManager.GoToState(label, checkBox.IsChecked ? "Checked" : "Normal");
+            }
+        }
     }
 }
