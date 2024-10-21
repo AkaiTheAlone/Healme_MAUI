@@ -24,6 +24,18 @@
             Aspect="AspectFit"
             WidthRequest="300"
             HeightRequest="300" />
+        
+        <HorizontalStackLayout>
+            <ImageButton>
+                
+                
+                
+            </ImageButton>
+
+
+
+        </HorizontalStackLayout>
     </StackLayout>
 
+    
 </ContentPage>

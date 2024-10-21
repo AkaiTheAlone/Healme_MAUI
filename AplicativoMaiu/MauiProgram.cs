@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
 using FFImageLoading.Maui;
-using Plugin.LocalNotification;
 
 namespace AplicativoMaiu
 {
@@ -11,7 +10,6 @@ namespace AplicativoMaiu
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                .UseLocalNotification()
                 .UseFFImageLoading() // adicionei o bagui pra usar o gif
                 .ConfigureFonts(fonts =>
                 {

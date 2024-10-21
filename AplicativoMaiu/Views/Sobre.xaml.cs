@@ -1,26 +1,24 @@
-using AplicativoMaiu.Views;
-
-namespace AplicativoMaiu;
-
-public partial class Sobre : ContentPage
+namespace AplicativoMaiu.Views
 {
-	public Sobre()
-	{
-		InitializeComponent();
-	}
-	public async void PrivacidadeView(object sender, EventArgs e)
-	{
-		var PRIVPAGE = new Privacidade();
-        await Navigation.PushAsync(new Privacidade());
-    }
-    public async void SobreNosView(object sender, EventArgs e)
+    public partial class Sobre : ContentPage
     {
-        //mudar essa bomba aq pra SobreNós
-        var PRIVPAGE = new Privacidade();
-        await Navigation.PushAsync(new Privacidade());
-    }
-    public async void CVV(object sender, EventArgs e)
-    {
-        await Launcher.OpenAsync("https://cvv.org.br/");
+        public Sobre()
+        {
+            InitializeComponent();
+        }
+        public async void PrivacidadeView(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Privacidade());
+        }
+     
+        public async void CVV(object sender, EventArgs e)
+        {
+            await Launcher.OpenAsync("https://cvv.org.br/");
+        }
+        public async void SobreEmpresaView(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SobreEmpresa());
+        }
     }
 }
+

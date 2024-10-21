@@ -10,7 +10,7 @@
                 Clicked="AbrirPlaylistSpotify"
                 HorizontalOptions="Center"
                 VerticalOptions="Start"/>
-        botao removido pra botar esse botao com img ai embaixo-->
+        botao removido pra botar esse botao com img ai embaixo, bem mais bonito hein bixo-->
 
         <ImageButton Source="Resources/Images/spotify.svg"
               Command="{Binding Source={x:Reference meditacaopage}, 
@@ -23,8 +23,6 @@
               VerticalOptions="Start"/>
 
         <VerticalStackLayout Padding="20" VerticalOptions="Center">
-
-
             <Label x:Name="lblCronometro" 
                Text="00:00" 
                FontSize="48" 
@@ -35,7 +33,6 @@
 
             <Label>
             </Label>
-
 
             <Frame CornerRadius="50" 
                Padding="1"
@@ -60,11 +57,20 @@
 
             </Label>
             <VerticalStackLayout HorizontalOptions="Center" 
-                             Spacing="10">
+                                 Spacing="10">
 
-                <Button Text="Iniciar" Clicked="IniciarTimer" />
-                <Button Text="Parar" Clicked="PararTimer" />
-                <Button Text="Reiniciar" Clicked="ReiniciarTimer" />
+                <Button Text="Iniciar" 
+                        Clicked="IniciarTimer"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                <Button Text="Parar" 
+                        Clicked="PararTimer"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                <Button Text="Reiniciar" 
+                        Clicked="ReiniciarTimer"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
 
             </VerticalStackLayout>
         </VerticalStackLayout>

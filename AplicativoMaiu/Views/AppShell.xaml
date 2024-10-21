@@ -24,12 +24,15 @@
             ContentTemplate="{DataTemplate local:Meditacao}"
             Route="Meditacao" 
             Icon="meditar.png"/>
-
+         <!--em todas as views o caminho ta na raiz, só viewname
+        mas nesse aq em específico bugou e ficou com o caminho app.views.nameview
+        tem co-->
         <ShellContent
             Title="Sobre"
-            ContentTemplate="{DataTemplate local:Sobre}"
+            ContentTemplate="{DataTemplate local:Views.Sobre}"
             Route="Sobre" 
             Icon="informacoes.png"/>
+
         <ShellContent
             Title="Configurar"
             ContentTemplate="{DataTemplate local:Configuracoes}"

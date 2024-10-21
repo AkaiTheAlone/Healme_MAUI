@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AplicativoMaiu.Sobre"
+             x:Class="AplicativoMaiu.Views.Sobre"
              Title="Sobre">
     <StackLayout Padding="13">
         <VerticalStackLayout Padding="15">
@@ -27,6 +27,13 @@
                     Clicked="CVV"
                     WidthRequest="230"
                     Margin="0,10,0,0"/>
+            <Button Text="Sobre a Healme"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="SobreEmpresaView"
+                    WidthRequest="230"
+                    Margin="0,10,0,0">
+            </Button>
         </VerticalStackLayout>
     </StackLayout>
 </ContentPage>
